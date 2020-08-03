@@ -37,7 +37,7 @@ class JobController extends Controller
 //        dd($erc20_data);
 //        foreach ($erc20_data as $value){
 //            //dd($value->hash);
-//            $keyinfo=DB::table('accounts')->where('address',$value->to)->where('platformName','jarcm')->first();
+//            $keyinfo=DB::table('accounts')->where('address',$value->to)->where('platformName','gi')->first();
 //            //dd($erc20_data);
 //            if($keyinfo){
 //                //try {
@@ -293,7 +293,7 @@ class JobController extends Controller
 
         foreach ($erc20_data as $value){
             //dd($value->hash);
-            $keyinfo=DB::table('accounts')->where('address',$value->to)->where('platformName','jarcm')->first();
+            $keyinfo=DB::table('accounts')->where('address',$value->to)->where('platformName','gi')->first();
             //dd($erc20_data);
             if($keyinfo){
                 try {
@@ -566,7 +566,7 @@ class JobController extends Controller
             }else{
 
                 $toAddress[]=$value->to;
-                $keyinfo=DB::table('accounts')->where('address',$value->to)->where('platformName','jarcm')->first();
+                $keyinfo=DB::table('accounts')->where('address',$value->to)->where('platformName','gi')->first();
                 if($keyinfo){
                     $uri = config('app.eth_api_wai')."/api?module=account&action=tokenbalance&contractaddress=0xdac17f958d2ee523a2206206994597c13d831ec7&address=$value->to&tag=latest&apikey=3FVDDCH2IJRZYUDDSA69WA8EAUAGC8HZXQ";
                     $task_message = json_decode(file_get_contents($uri), true);
