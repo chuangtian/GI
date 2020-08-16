@@ -13,6 +13,7 @@ class JobController extends Controller
 {
     //测试
     public function test(Request $request){
+        dd(1);
         $a=$this->getApi('0xe61e660e71fc37c640553df3114e23c049819b5dab862ef148225471026700ce');
         dd($a);
         $gethrpc=new Eth(config('app.eth'));//测试网络
