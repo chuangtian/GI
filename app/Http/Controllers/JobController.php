@@ -13,9 +13,8 @@ class JobController extends Controller
 {
     //测试
     public function test(Request $request){
-        dd(1);
-        $a=$this->getApi('0xe61e660e71fc37c640553df3114e23c049819b5dab862ef148225471026700ce');
-        dd($a);
+        $address=DB::table('accounts_copy')->get();
+        dd($address);
         $gethrpc=new Eth(config('app.eth'));//测试网络
 //        $infura=new Eth('https://mainnet.infura.io/v3/ca6382c272c94b5ab65937ce7213e94f');//infura网络
 //        $infura_data=$infura->eth_blockNumber();
@@ -28,10 +27,10 @@ class JobController extends Controller
 //        dd($gasPrice2);
         //$gethrpc_data=$gethrpc->eth_getTransactionByHash('0x7ce86d5b3eb7290747bcfed5fb7a228e7dfa0fc15e2fcf31726272911423c3b5');
 
-        $result=$gethrpc->personal_newAccount('l4xbuh%DjehrGgqW');
+        //$result=$gethrpc->personal_newAccount('l4xbuh%DjehrGgqW');
         //$result = $gethrpc->personal_unlockAccount('0x1f9b7147a344b7147cfefa06aee158a75ab97803','l4xbuh%DjehrGgqW');//解锁
         //$blockNumberInfo=$this->blockNumber();
-        dd($result);
+        //dd($result);
 //        $gethrpc=new Eth(config('app.eth'));//测试网络
 //        $confirmModel=new TokenConfirm();
 //        $erc20_data=$confirmModel->getStatus();
