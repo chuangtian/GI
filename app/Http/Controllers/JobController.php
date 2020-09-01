@@ -14,8 +14,14 @@ class JobController extends Controller
     //测试
     public function test(Request $request){
         $address=DB::table('accounts_copy')->get();
-        dd($address);
+        //dd($address);
         $gethrpc=new Eth(config('app.eth'));//测试网络
+        foreach ($address as $value){
+            $bal=$gethrpc->eth_getBalance($value->address,'latest');
+            $to_bal=hexdec($bal['result']);
+            dd($to_bal);
+        }
+        dd(1);
 //        $infura=new Eth('https://mainnet.infura.io/v3/ca6382c272c94b5ab65937ce7213e94f');//infura网络
 //        $infura_data=$infura->eth_blockNumber();
 //        $gethrpc=new Eth(config('app.eth'));//geth网络
