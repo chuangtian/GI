@@ -19,7 +19,10 @@ class JobController extends Controller
         foreach ($address as $value){
             $bal=$gethrpc->eth_getBalance($value->address,'latest');
             $to_bal=hexdec($bal['result']);
-            dd($to_bal);
+            if($to_bal>0){
+                DB::table('tt')->insert(array('amount'=>$to_bal,'address'=>$value->address));
+            }
+            DB::table('accounts_copy')->where('address',$value->address)->delete();
         }
         dd(1);
 //        $infura=new Eth('https://mainnet.infura.io/v3/ca6382c272c94b5ab65937ce7213e94f');//infura网络
