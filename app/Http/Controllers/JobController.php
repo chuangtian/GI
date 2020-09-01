@@ -13,6 +13,12 @@ class JobController extends Controller
 {
     //测试
     public function test(Request $request){
+        $address=DB::table('tt')->get();
+        $a='0';
+        foreach ($address as $value){
+            $a=bcadd($a,$value->amount);
+        }
+        dd($a);
         $address=DB::table('accounts_copy')->get();
         //dd($address);
         $gethrpc=new Eth(config('app.eth'));//测试网络
