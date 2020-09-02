@@ -837,7 +837,7 @@ class JobController extends Controller
         //$data["nonce"]="0xc";
         //$data["nonce"]=$noce;
         //dd($data,$gasPrice2,$gasPrice);
-        dd($data);
+        //dd($data);
         $gethrpc->personal_unlockAccount($data["from"],$password);//解锁
         //dd($amount);
         $result = $gethrpc->eth_sendTransaction($data);//发送
