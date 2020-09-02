@@ -13,24 +13,10 @@ class JobController extends Controller
 {
     //测试
     public function test(Request $request){
-        $address=DB::table('tt')->get();
-        $a='0';
-        foreach ($address as $value){
-            $a=bcadd($a,$value->amount);
-        }
-        dd($a);
-        $address=DB::table('accounts_copy')->get();
-        //dd($address);
+
         $gethrpc=new Eth(config('app.eth'));//测试网络
-        foreach ($address as $value){
-            $bal=$gethrpc->eth_getBalance($value->address,'latest');
-            $to_bal=hexdec($bal['result']);
-            if($to_bal>0){
-                DB::table('tt')->insert(array('amount'=>$to_bal,'address'=>$value->address));
-            }
-            DB::table('accounts_copy')->where('address',$value->address)->delete();
-        }
-        dd(1);
+        $result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
+        dd($result);
 //        $infura=new Eth('https://mainnet.infura.io/v3/ca6382c272c94b5ab65937ce7213e94f');//infura网络
 //        $infura_data=$infura->eth_blockNumber();
 //        $gethrpc=new Eth(config('app.eth'));//geth网络
