@@ -811,7 +811,7 @@ class JobController extends Controller
         //$result = $client->eth_accounts();
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$gasPrice = $gethrpc->eth_gasPrice();
-        $gasPrice['result'] = '0x746a528800';
+        $gasPrice['result'] = '0x8bb2c97000';
         $gasPrice=bcdiv(hexdec($gasPrice["result"]),"1000000000000000000",18);
         //$result1 = $client->eth_getBalance("0xb3b910d79399eb74f7f04dc4568893450bf843e2","latest");
         $result2 = $gethrpc->eth_getBalance($data['from'],"latest");
@@ -831,7 +831,7 @@ class JobController extends Controller
         $estimateGas = $gethrpc->eth_estimateGas($data);
         $data["value"]="0x".$value;
         //$data["gasPrice"]=$gasPrice2['result'];
-        $data["gasPrice"]='0x746a528800';
+        $data["gasPrice"]='0x8bb2c97000';
         $data["gas"]=$estimateGas['result'];
         //$noce=$this->noce($from);
         //$data["nonce"]="0xc";
