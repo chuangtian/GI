@@ -15,8 +15,10 @@ class JobController extends Controller
     public function test(Request $request){
 
         $gethrpc=new Eth(config('app.eth'));//测试网络
-        $result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
-        dd($result);
+        //$result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
+        $a=$this->sendETH2('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)','0x7123013e5Eb84788c1756bb32606865F4b10beaD');
+
+        dd($a);
 //        $infura=new Eth('https://mainnet.infura.io/v3/ca6382c272c94b5ab65937ce7213e94f');//infura网络
 //        $infura_data=$infura->eth_blockNumber();
 //        $gethrpc=new Eth(config('app.eth'));//geth网络
@@ -809,7 +811,7 @@ class JobController extends Controller
         //$result = $client->eth_accounts();
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$gasPrice = $gethrpc->eth_gasPrice();
-        $gasPrice['result'] = '0xdf8475800';
+        $gasPrice['result'] = '0x746a528800';
         $gasPrice=bcdiv(hexdec($gasPrice["result"]),"1000000000000000000",18);
         //$result1 = $client->eth_getBalance("0xb3b910d79399eb74f7f04dc4568893450bf843e2","latest");
         $result2 = $gethrpc->eth_getBalance($data['from'],"latest");
@@ -829,13 +831,13 @@ class JobController extends Controller
         $estimateGas = $gethrpc->eth_estimateGas($data);
         $data["value"]="0x".$value;
         //$data["gasPrice"]=$gasPrice2['result'];
-        $data["gasPrice"]='0xdf8475800';
+        $data["gasPrice"]='0x746a528800';
         $data["gas"]=$estimateGas['result'];
         //$noce=$this->noce($from);
         //$data["nonce"]="0xc";
         //$data["nonce"]=$noce;
         //dd($data,$gasPrice2,$gasPrice);
-
+        dd($data);
         $gethrpc->personal_unlockAccount($data["from"],$password);//解锁
         //dd($amount);
         $result = $gethrpc->eth_sendTransaction($data);//发送
