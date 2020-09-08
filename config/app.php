@@ -128,7 +128,7 @@ return [
     'ethAddress' => '0xCC70b04Ce5A500cE899DBdAf84Fa52567E93E3c2',
 //    'erc20Address' => '0xa25b48DE6ae47e59cBd9f1Ba0f853dC110E5C616',
 //    'ethAddress' => '0xa25b48DE6ae47e59cBd9f1Ba0f853dC110E5C616',
-    'getFeeAddress' => '0x5e065b7ca8767ff48adfa33ca1b5dc14b3db05d0',
+    'getFeeAddress' => '0xff338a8dfaf8d80c450a87d2b95663fedb76645f',
     'getFeeAddressPassword' => 'v3IHsF26Fw7Bz1TC',
     'AddressPassword' => 'vXI^ZD$p&u$^zyF2',
 
