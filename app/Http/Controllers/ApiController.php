@@ -527,6 +527,35 @@ class ApiController extends Controller
         }
         return $adress_all;
     }
+
+    public function getAddress(Request $request){
+        //判断key
+        $key=$request->input('key');
+
+        $hash = md5('Ual@wvsHsXFDQ8Vu'.'NcO%FJJf%8iALbof');
+        //dd($hash);
+        if($key!=$hash){
+            $data['code']=402;
+            $data['message']='Key error';
+            return $data;
+        }
+        $gethrpc=new Eth(config('app.eth'));
+        $result=$gethrpc->personal_newAccount('TwghFLHBRVvXI35O');
+
+        $address = DB::table('accounts')->insert(array("platformName"=>'gi','address'=>$result['result']));
+        if($address){
+
+            $data['code']=200;
+            $data['address']=$result['result'];
+            return $data;
+        }else{
+            $data['code']=403;
+            $data['address']='Error';
+            return $data;
+        }
+
+    }
+
     public function  nonce($from){
         $a=Redis::get($from);
         if($a!=''){

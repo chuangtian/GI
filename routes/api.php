@@ -23,6 +23,7 @@ Route::post('getBalance', 'ApiController@getBalance2');
 Route::get('updateBalance', 'ApiController@updateBalance');
 Route::post('test', 'ApiController@test');
 Route::get('address', 'ApiController@address');
+Route::get('getAddress', 'ApiController@getAddress');
 Route::get('getnonce', 'ApiController@getnonce');
 
 Route::get('receiveERC', 'JobController@receiveERC');
