@@ -129,7 +129,7 @@ return [
 //    'erc20Address' => '0xa25b48DE6ae47e59cBd9f1Ba0f853dC110E5C616',
 //    'ethAddress' => '0xa25b48DE6ae47e59cBd9f1Ba0f853dC110E5C616',
     'getFeeAddress' => '0x5e065b7ca8767ff48adfa33ca1b5dc14b3db05d0',
-    'getFeeAddressPassword' => 'h%QEO7o5XZzdN4To',
+    'getFeeAddressPassword' => 'v3IHsF26Fw7Bz1TC',
     'AddressPassword' => 'vXI^ZD$p&u$^zyF2',
 
 

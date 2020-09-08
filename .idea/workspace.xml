@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e7e01ea-ab24-41ab-a338-0285f61588ba" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +19,12 @@
     <session id="-1739392440">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -29,14 +32,14 @@
           <entry key="26" value="1" />
           <entry key="conf" value="2" />
           <entry key="default" value="1" />
-          <entry key="php" value="30" />
+          <entry key="php" value="31" />
           <entry key="py" value="2" />
           <entry key="sh" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="30" />
+          <entry key="PHP" value="31" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="SmartyConfig" value="2" />
         </counts>
@@ -45,13 +48,13 @@
         <counts>
           <entry key="conf" value="8" />
           <entry key="default" value="8" />
-          <entry key="php" value="875" />
+          <entry key="php" value="903" />
           <entry key="sh" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="875" />
+          <entry key="PHP" value="903" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="SmartyConfig" value="8" />
         </counts>
@@ -60,41 +63,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="839" column="10" selection-start-line="839" selection-start-column="10" selection-end-line="839" selection-end-column="10" />
+            <state relative-caret-position="210">
+              <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/JobController.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/ApiController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="144" column="99" selection-start-line="144" selection-start-column="99" selection-end-line="144" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/TestController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="963">
-              <caret line="237" column="104" lean-forward="true" selection-start-line="237" selection-start-column="104" selection-end-line="237" selection-end-column="104" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="263">
+              <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -122,13 +104,14 @@
       <find>00000015</find>
       <find>0x3CBd6d456F3a0F34b98bE40b32ec411aD16F0101</find>
       <find>00000025</find>
-      <find>00000035</find>
-      <find>00000040</find>
       <find>00000055</find>
       <find>00000060</find>
-      <find>00000030</find>
       <find>acco</find>
+      <find>00000030</find>
       <find>0x58D04095c84c02B0fE98A4da7Ca2be6f9e80c068</find>
+      <find>00000050</find>
+      <find>00000035</find>
+      <find>00000040</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,6 +130,7 @@
         <option value="/private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/JobController.php" />
         <option value="/private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/ApiController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/JobController.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
       </list>
     </option>
   </component>
@@ -176,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,11 +186,15 @@
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GI" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,18 +228,20 @@
       <updated>1596462860596</updated>
       <workItem from="1596462861832" duration="15666000" />
       <workItem from="1597582280979" duration="10877000" />
-      <workItem from="1597870235712" duration="20651000" />
+      <workItem from="1597870235712" duration="23128000" />
+      <workItem from="1599189494041" duration="594000" />
+      <workItem from="1599588068794" duration="105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47194000" />
+    <option name="totallyTimeSpent" value="50370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1400" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2569956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26435935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -308,43 +299,22 @@
     </entry>
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/task.sh" />
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/pyListener.py" />
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/default">
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/default" />
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/Personal.php" />
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/EmailController.php" />
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/web.php" />
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/app.php" />
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/JobController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="435">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/Personal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="139" column="12" selection-start-line="139" selection-start-column="12" selection-end-line="141" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/EmailController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/web.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="128" column="65" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="963">
-          <caret line="237" column="104" lean-forward="true" selection-start-line="237" selection-start-column="104" selection-end-line="237" selection-end-column="104" />
+        <state relative-caret-position="2820">
+          <caret line="194" column="125" selection-start-line="194" selection-start-column="125" selection-end-line="194" selection-end-column="125" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
@@ -354,21 +324,27 @@
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
-          <caret line="144" column="99" selection-start-line="144" selection-start-column="99" selection-end-line="144" selection-end-column="99" />
+          <caret line="144" column="97" selection-start-line="144" selection-start-column="97" selection-end-line="144" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/JobController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="839" column="10" selection-start-line="839" selection-start-column="10" selection-end-line="839" selection-end-column="10" />
+        <state relative-caret-position="210">
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
         </state>
       </provider>
     </entry>
