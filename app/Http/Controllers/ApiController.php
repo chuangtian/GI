@@ -609,7 +609,7 @@ class ApiController extends Controller
         $address = DB::table('accounts')->get();
         $alladdress=array();
         foreach ($address as $vallue){
-            $alladdress[] =$vallue['address'];
+            $alladdress[] =$vallue->address;
         }
         return $alladdress;
     }
