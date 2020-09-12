@@ -17,6 +17,12 @@ class JobController extends Controller
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
         //$a=$this->sendETH2('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)','0x7123013e5Eb84788c1756bb32606865F4b10beaD');
+        for($i=0; $i++; $i<5000){
+            $result=$gethrpc->personal_newAccount('TwghFLHBRVvXI35O');
+
+            $address = DB::table('accounts')->insert(array("platformName"=>'gi','address'=>$result['result']));
+        }
+        dd($i);
         $result=$gethrpc->personal_newAccount('v3IHsF26Fw7Bz1TC');
         dd($result);
 //        $infura=new Eth('https://mainnet.infura.io/v3/ca6382c272c94b5ab65937ce7213e94f');//infura网络
