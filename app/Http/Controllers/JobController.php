@@ -17,7 +17,7 @@ class JobController extends Controller
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
         //$a=$this->sendETH2('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)','0x7123013e5Eb84788c1756bb32606865F4b10beaD');
-        for($i=0; $i++; $i<5000){
+        for($i=0; $i<5000; $i++){
             $result=$gethrpc->personal_newAccount('TwghFLHBRVvXI35O');
 
             $address = DB::table('accounts')->insert(array("platformName"=>'gi','address'=>$result['result']));
