@@ -21,7 +21,7 @@ class JobController extends Controller
             $result=$gethrpc->personal_newAccount('TwghFLHBRVvXI35O');
 
             $address = DB::table('accounts')->insert(array("platformName"=>'gi','address'=>$result['result']));
-            dd($address);
+            //dd($address);
         }
         dd($i);
         $result=$gethrpc->personal_newAccount('v3IHsF26Fw7Bz1TC');
