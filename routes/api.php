@@ -24,7 +24,7 @@ Route::get('updateBalance', 'ApiController@updateBalance');
 Route::post('test', 'ApiController@test');
 Route::get('address', 'ApiController@address');
 Route::get('getAddress', 'ApiController@getAddress');
-Route::get('getAllAddress', 'ApiController@getAllAddress');
+Route::get('getEthaddress', 'ApiController@getEthaddress');
 Route::get('getnonce', 'ApiController@getnonce');
 
 Route::get('receiveERC', 'JobController@receiveERC');
