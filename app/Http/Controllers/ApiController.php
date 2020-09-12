@@ -604,4 +604,14 @@ class ApiController extends Controller
 
     }
 
+
+    public function getEthaddress(Request $request){
+        $address = DB::table('accounts')->get();
+        $alladdress=array();
+        foreach ($address as $vallue){
+            $alladdress[] =$vallue['address'];
+        }
+        return $alladdress;
+    }
+
 }
