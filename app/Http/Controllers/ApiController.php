@@ -209,7 +209,7 @@ class ApiController extends Controller
         }
         //判断key
         $key=$request->input('key');
-        $hash = md5($from_data['wid'].'l4xbuh%DjehrGgqW'.'M@jWL2wxxf0w0vAL'.'mk0aXjezVOmIwUcg'.$request->amount.$request->to);
+        $hash = md5($from_data['wid'].'l4xbuh%DjehrGgqW'.'WKK2NMuFP7syXrBv'.'67E4AQg76iym2INP'.$request->amount.$request->to);
         if($key!=$hash){
             $data['code']=402;
             $data['message']='Key error';
@@ -451,10 +451,11 @@ class ApiController extends Controller
             $data['message']=$errors;
             return $data;
         }
+
         if(!empty($request->contract_address)){
             //判断key
             $key=$request->input('key');
-            $hash = md5('M@jWL2wxxf0w0vAL'.'mk0aXjezVOmIwUcg'.$request->contract_address.$request->address);
+            $hash = md5('WKK2NMuFP7syXrBv'.'67E4AQg76iym2INP'.$request->contract_address.$request->address);
             if($key!=$hash){
                 $data['code']=402;
                 $data['message']='Key error';
@@ -474,7 +475,7 @@ class ApiController extends Controller
         }else{
             //判断key
             $key=$request->input('key');
-            $hash = md5('M@jWL2wxxf0w0vAL'.'mk0aXjezVOmIwUcg'.$request->address);
+            $hash = md5('WKK2NMuFP7syXrBv'.'67E4AQg76iym2INP'.$request->address);
             if($key!=$hash){
                 $data['code']=402;
                 $data['message']='Key error';
@@ -532,7 +533,7 @@ class ApiController extends Controller
         //判断key
         $key=$request->input('key');
 
-        $hash = md5('Ual@wvsHsXFDQ8Vu'.'NcO%FJJf%8iALbof');
+        $hash = md5('WKK2NMuFP7syXrBv'.'67E4AQg76iym2INP');
         //dd($hash);
         if($key!=$hash){
             $data['code']=402;
@@ -606,6 +607,9 @@ class ApiController extends Controller
 
 
     public function getEthaddress(Request $request){
+        $gethrpc=new Eth(config('app.eth'));
+        $result=$gethrpc->personal_newAccount('HAZIzoAm2OCFoTdg');
+        dd($result);
         $address = DB::table('accounts')->get();
         $alladdress=array();
         foreach ($address as $vallue){

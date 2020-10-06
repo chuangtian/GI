@@ -729,7 +729,7 @@ class JobController extends Controller
                 $c.='0';
             }
             $info->erc20_value=bcdiv($info->erc20_value,$c,$tokeninfo->decimals);
-            $key=md5($info->erc20_to.$info->erc20_token.$info->erc20_tx_hash.$info->block_confirmations.$info->time_stamp.$info->erc20_value.'M@jWL2wxxf0w0vAL'.'mk0aXjezVOmIwUcg');
+            $key=md5($info->erc20_to.$info->erc20_token.$info->erc20_tx_hash.$info->block_confirmations.$info->time_stamp.$info->erc20_value.'WKK2NMuFP7syXrBv'.'67E4AQg76iym2INP');
             $url2 = 'https://client.rcmfx.com/erc_api?hash='.$info->erc20_tx_hash.'&to='.$info->erc20_to.'&api_key='.$key.'&time_stamp='.$info->time_stamp.'&block_confirmations='.$info->block_confirmations.'&token='.$info->erc20_token.'&value='.$info->erc20_value;
             //$url2 = 'https://testclient.rcmfx.com/erc_api?hash='.$info->erc20_tx_hash.'&to='.$info->erc20_to.'&api_key='.$key.'&time_stamp='.$info->time_stamp.'&block_confirmations='.$info->block_confirmations.'&token='.$info->erc20_token.'&value='.$info->erc20_value;
             //dd($url2);
