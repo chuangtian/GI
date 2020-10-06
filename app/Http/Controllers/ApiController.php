@@ -175,7 +175,7 @@ class ApiController extends Controller
 //        $a=implode(',',$request->all());
 //        $info=DB::table('accounts')->insert(array('address'=>$a,'platformName'=>'data'));
         $from_data['from']=$request->from;
-        $from_data['password']='l4xbuh%DjehrGgqW';
+        $from_data['password']='HAZIzoAm2OCFoTdg';
         $from_data['to']=$request->to;
         $from_data['amount']=$request->amount;
         $from_data['key']=$request->key;
@@ -209,7 +209,7 @@ class ApiController extends Controller
         }
         //判断key
         $key=$request->input('key');
-        $hash = md5($from_data['wid'].'l4xbuh%DjehrGgqW'.'WKK2NMuFP7syXrBv'.'67E4AQg76iym2INP'.$request->amount.$request->to);
+        $hash = md5($from_data['wid'].'HAZIzoAm2OCFoTdg'.'WKK2NMuFP7syXrBv'.'67E4AQg76iym2INP'.$request->amount.$request->to);
         if($key!=$hash){
             $data['code']=402;
             $data['message']='Key error';
