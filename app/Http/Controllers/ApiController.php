@@ -608,8 +608,20 @@ class ApiController extends Controller
 
     public function getEthaddress(Request $request){
         $gethrpc=new Eth(config('app.eth'));
-        $result=$gethrpc->personal_newAccount('HAZIzoAm2OCFoTdg');
+        $result = $gethrpc->personal_unlockAccount('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg');//解锁
+
+//        $result=$gethrpc->personal_newAccount('HAZIzoAm2OCFoTdg');
         dd($result);
+        //判断key
+        $key=$request->input('key');
+
+        $hash = md5('WKK2NMuFP7syXrBv'.'67E4AQg76iym2INP');
+        //dd($hash);
+        if($key!=$hash){
+            $data['code']=402;
+            $data['message']='Key error';
+            return $data;
+        }
         $address = DB::table('accounts')->get();
         $alladdress=array();
         foreach ($address as $vallue){
