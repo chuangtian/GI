@@ -46,13 +46,13 @@
         <counts>
           <entry key="conf" value="8" />
           <entry key="default" value="8" />
-          <entry key="php" value="1055" />
+          <entry key="php" value="1057" />
           <entry key="sh" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1055" />
+          <entry key="PHP" value="1057" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="SmartyConfig" value="8" />
         </counts>
@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
-              <caret line="535" column="8" selection-start-line="535" selection-start-column="8" selection-end-line="535" selection-end-column="8" />
+              <caret line="535" column="10" selection-start-line="535" selection-start-column="10" selection-end-line="535" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -237,12 +237,12 @@
       <workItem from="1597870235712" duration="23128000" />
       <workItem from="1599189494041" duration="594000" />
       <workItem from="1599588068794" duration="3751000" />
-      <workItem from="1601958609724" duration="833000" />
+      <workItem from="1601958609724" duration="896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54849000" />
+    <option name="totallyTimeSpent" value="54912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="38" width="1400" height="812" extended-state="0" />
@@ -347,7 +347,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
-          <caret line="535" column="8" selection-start-line="535" selection-start-column="8" selection-end-line="535" selection-end-column="8" />
+          <caret line="535" column="10" selection-start-line="535" selection-start-column="10" selection-end-line="535" selection-end-column="10" />
         </state>
       </provider>
     </entry>
