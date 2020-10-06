@@ -533,7 +533,7 @@ class ApiController extends Controller
         $key=$request->input('key');
 
         $hash = md5('Ual@wvsHsXFDQ8Vu'.'NcO%FJJf%8iALbof');
-        //dd($hash);
+        dd($hash);
         if($key!=$hash){
             $data['code']=402;
             $data['message']='Key error';
