@@ -607,12 +607,12 @@ class ApiController extends Controller
 
 
     public function getEthaddress(Request $request){
-        $gethrpc=new Eth(config('app.eth'));
+        //$gethrpc=new Eth(config('app.eth'));
         //$result = $gethrpc->personal_unlockAccount('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg');//解锁
-        $result = $gethrpc->personal_unlockAccount('0x9c3390f6e1a97cf12cf1eea7324129b2f500ea8d','s1RcvKNdIVxYS6bU');//解锁
+        //$result = $gethrpc->personal_unlockAccount('0x9c3390f6e1a97cf12cf1eea7324129b2f500ea8d','s1RcvKNdIVxYS6bU');//解锁
 
         //$result=$gethrpc->personal_newAccount('s1RcvKNdIVxYS6bU');
-        dd($result);
+        //dd($result);
         //判断key
         $key=$request->input('key');
 
