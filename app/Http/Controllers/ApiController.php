@@ -213,6 +213,7 @@ class ApiController extends Controller
         if($key!=$hash){
             $data['code']=402;
             $data['message']='Key error';
+            $data['key']=$hash;
             return $data;
         }
 
