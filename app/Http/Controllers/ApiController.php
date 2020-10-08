@@ -158,7 +158,7 @@ class ApiController extends Controller
             'wid' => 'required',
         ]);
         $ip=$_SERVER["REMOTE_ADDR"];
-        if($ip!='103.84.86.162' and $ip!='103.84.86.163'){
+        if($ip!='148.66.49.74' and $ip!='148.66.49.75'){
             $data['code']=402;
             $data['message']='拒绝访问';
             return $data;
