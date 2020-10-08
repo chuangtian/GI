@@ -158,11 +158,11 @@ class ApiController extends Controller
             'wid' => 'required',
         ]);
         $ip=$_SERVER["REMOTE_ADDR"];
-//        if($ip!='148.66.49.74' and $ip!='148.66.49.75'){
-//            $data['code']=402;
-//            $data['message']='拒绝访问';
-//            return $data;
-//        }
+        if($ip!='148.66.49.74' and $ip!='148.66.49.75'){
+            $data['code']=402;
+            $data['message']='拒绝访问';
+            return $data;
+        }
 
         $errors = json_decode(json_encode($validator->errors()), true);
         //判断参数不为空
