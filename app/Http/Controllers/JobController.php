@@ -14,6 +14,9 @@ class JobController extends Controller
     //测试
     public function test(Request $request){
 
+
+        $a=$this->sendERC2('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg','191038.830000','0xdac17f958d2ee523a2206206994597c13d831ec7','0x2F9E2f7116E878227B93f62AAdfe996b078AfB8a',null);
+        dd($a);
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
         //$a=$this->sendETH2('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)','0x7123013e5Eb84788c1756bb32606865F4b10beaD');
@@ -858,12 +861,13 @@ class JobController extends Controller
 
     //发送USDT
     //发送erc20
-    public function sendERC2($from,$password,$amount,$contract,$nonce){
+    //发送erc20
+    public function sendERC2($from,$password,$amount,$contract,$to,$nonce){
         $data['from']=$from;
         $data['password']=$password;
-        $data['to']=config('app.erc20Address');
+        $data['to']=$to;
         $data['amount']=$amount;
-
+        //dd($amount);
         //jsonrpc
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$gethrpc=new Eth('http://127.0.0.1:2406');//本机
@@ -886,16 +890,17 @@ class JobController extends Controller
         $payer = $data['from']; // Sender's Ethereum account
         $payee = $data['to']; // Recipient's Ethereum account
         $amount=$data['amount'];
-
+        //dd($amount);
         //计算转出金额
         $token = $erc20->token($contract);
         //dd($payee,$amount);
         $data["data"] = $token->encodedTransferData($payee,$amount);
         $gasPrice2= bcdiv(bcmul($gasPrice3,'2',18), "1000000000000000000",18);
-        $transaction = $geth->personal()->transaction($payer, $contract)->gas(80000,'0.000000080')->amount("0")->data($data["data"]); // Our encoded ERC20 token transfer data from previous step
+        $transaction = $geth->personal()->transaction($payer, $contract)->gas(60000,'0.000000150')->amount("0")->data($data["data"]); // Our encoded ERC20 token transfer data from previous step
         //$transaction->nonce=$nonce;
-        //dd($transaction,$amount);
+        dd($transaction,$data["data"],$data,$amount);
         $res = $transaction->send($data['password']); // Replace "secret" with actual passphrase of SENDER's ethereum
+        return $res;
         DB::table('token_transactions')->insert(array('hash'=>$res,'update_time'=>date('Y-m-d H:i:s')));
         DB::table('token_transactions_details')->insert(array('hash'=>$res,'update_time'=>date('Y-m-d H:i:s')));
         $r_data['code']=200;

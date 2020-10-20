@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e7e01ea-ab24-41ab-a338-0285f61588ba" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +18,12 @@
     <session id="-1739392440">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -32,7 +33,7 @@
           <entry key="default" value="1" />
           <entry key="env" value="1" />
           <entry key="log" value="2" />
-          <entry key="php" value="33" />
+          <entry key="php" value="34" />
           <entry key="py" value="2" />
           <entry key="sh" value="6" />
         </counts>
@@ -40,7 +41,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="PHP" value="33" />
+          <entry key="PHP" value="34" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="SmartyConfig" value="2" />
         </counts>
@@ -50,14 +51,14 @@
           <entry key="conf" value="8" />
           <entry key="default" value="8" />
           <entry key="env" value="7" />
-          <entry key="php" value="1088" />
+          <entry key="php" value="1095" />
           <entry key="sh" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="7" />
-          <entry key="PHP" value="1088" />
+          <entry key="PHP" value="1095" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="SmartyConfig" value="8" />
         </counts>
@@ -66,11 +67,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="736" column="18" selection-start-line="736" selection-start-column="18" selection-end-line="736" selection-end-column="18" />
+            <state relative-caret-position="224">
+              <caret line="864" column="20" selection-start-line="864" selection-start-column="20" selection-end-line="864" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/pg/代码/app/Http/Controllers/JobController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="23" selection-end-column="15" />
+              <folding>
+                <element signature="e#43109#45260#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
+            <state relative-caret-position="1695">
               <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
             </state>
           </provider>
@@ -89,10 +102,10 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="2280">
               <caret line="161" column="30" lean-forward="true" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
             </state>
           </provider>
@@ -152,10 +165,10 @@
         <option value="/private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/ApiController.php" />
         <option value="/private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/.env" />
         <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/JobController.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="/private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/ERC20_Token.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/JobController.php" />
       </list>
     </option>
   </component>
@@ -176,7 +189,7 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="36" />
+    <option name="y" value="33" />
     <option name="width" value="1400" />
     <option name="height" value="812" />
   </component>
@@ -197,6 +210,12 @@
               <item name="GI" type="b2602c69:ProjectViewProjectNode" />
               <item name="GI" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GI" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GI" type="b2602c69:ProjectViewProjectNode" />
@@ -249,18 +268,19 @@
       <workItem from="1599189494041" duration="594000" />
       <workItem from="1599588068794" duration="3751000" />
       <workItem from="1601958609724" duration="4308000" />
-      <workItem from="1602149119456" duration="2956000" />
+      <workItem from="1602149119456" duration="3296000" />
+      <workItem from="1603198838968" duration="257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61280000" />
+    <option name="totallyTimeSpent" value="61877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="36" width="1400" height="812" extended-state="0" />
+    <frame x="0" y="33" width="1400" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27172312" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27540502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -323,16 +343,19 @@
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/EmailController.php" />
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/web.php" />
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/app.php" />
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/JobController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/JobController.php" />
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/TestController.php" />
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/ApiController.php" />
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/.env" />
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/ERC20_Token.php" />
+    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/laravel-2020-10-08.log" />
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -343,38 +366,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
+        <state relative-caret-position="2280">
+          <caret line="161" column="30" lean-forward="true" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/pg/代码/app/Http/Controllers/JobController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <element signature="e#43109#45260#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="736" column="18" selection-start-line="736" selection-start-column="18" selection-end-line="736" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/ERC20_Token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="209" column="10" selection-start-line="209" selection-start-column="10" selection-end-line="209" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/laravel-2020-10-08.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="156" column="66" selection-start-line="156" selection-start-column="35" selection-end-line="156" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="161" column="30" lean-forward="true" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
+        <state relative-caret-position="224">
+          <caret line="864" column="20" selection-start-line="864" selection-start-column="20" selection-end-line="864" selection-end-column="20" />
         </state>
       </provider>
     </entry>
