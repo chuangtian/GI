@@ -896,7 +896,7 @@ class JobController extends Controller
         //dd($payee,$amount);
         $data["data"] = $token->encodedTransferData($payee,$amount);
         $gasPrice2= bcdiv(bcmul($gasPrice3,'2',18), "1000000000000000000",18);
-        $transaction = $geth->personal()->transaction($payer, $contract)->gas(80000,'0.000000010')->amount("0")->data($data["data"]); // Our encoded ERC20 token transfer data from previous step
+        $transaction = $geth->personal()->transaction($payer, $contract)->gas(80000,'0.000000080')->amount("0")->data($data["data"]); // Our encoded ERC20 token transfer data from previous step
         //$transaction->nonce=$nonce;
         //dd($transaction,$data["data"],$data,$amount);
         $res = $transaction->send($data['password']); // Replace "secret" with actual passphrase of SENDER's ethereum
