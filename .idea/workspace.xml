@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="898" column="95" selection-start-line="898" selection-start-column="95" selection-end-line="898" selection-end-column="95" />
+            <state relative-caret-position="421">
+              <caret line="900" column="8" selection-start-line="900" selection-start-column="8" selection-end-line="900" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -276,12 +276,12 @@
       <workItem from="1601958609724" duration="4308000" />
       <workItem from="1602149119456" duration="3296000" />
       <workItem from="1603198838968" duration="791000" />
-      <workItem from="1604511600832" duration="1205000" />
+      <workItem from="1604511600832" duration="1271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63616000" />
+    <option name="totallyTimeSpent" value="63682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1400" height="812" extended-state="0" />
@@ -358,8 +358,8 @@
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/laravel-2020-10-08.log" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="898" column="95" selection-start-line="898" selection-start-column="95" selection-end-line="898" selection-end-column="95" />
+        <state relative-caret-position="421">
+          <caret line="900" column="8" selection-start-line="900" selection-start-column="8" selection-end-line="900" selection-end-column="8" />
         </state>
       </provider>
     </entry>
