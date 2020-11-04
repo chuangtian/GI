@@ -834,14 +834,15 @@ class JobController extends Controller
             $result3 = $gethrpc->eth_estimateGas($data);
             $result3=bcmul($gasPrice,hexdec($result3["result"]),18);    //eth_estimateGas x gas_price
             $result2=bcdiv(hexdec($result2['result']),"1000000000000000000",18);
-            $result2='3.309751474495017724';
+            //$result2='3.309751474495017724';
             $aaa=bcsub($result2,$result3,18);
-            dd($aaa);
-            $value=dechex(bcmul($aaa,"1000000000000000000"));//减掉要消耗的费用并转十六进制
+            //dd($aaa);
+            //$value=dechex(bcmul($aaa,"1000000000000000000"));//减掉要消耗的费用并转十六进制
+            $value='2dab73faf9d8e504';//减掉要消耗的费用并转十六进制
         }else{
             $value=dechex(bcmul($amount,"1000000000000000000"));//减掉要消耗的费用并转十六进制
         }
-        dd($value);
+        //dd($value);
         $gasPrice2 = $gethrpc->eth_gasPrice();
         $estimateGas = $gethrpc->eth_estimateGas($data);
         $data["value"]="0x".$value;

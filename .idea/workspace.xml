@@ -50,14 +50,14 @@
           <entry key="conf" value="8" />
           <entry key="default" value="8" />
           <entry key="env" value="7" />
-          <entry key="php" value="1137" />
+          <entry key="php" value="1148" />
           <entry key="sh" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="7" />
-          <entry key="PHP" value="1137" />
+          <entry key="PHP" value="1148" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="SmartyConfig" value="8" />
         </counts>
@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="838" column="21" lean-forward="true" selection-start-line="838" selection-start-column="21" selection-end-line="838" selection-end-column="21" />
+            <state relative-caret-position="400">
+              <caret line="844" column="10" selection-start-line="844" selection-start-column="10" selection-end-line="844" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -276,12 +276,12 @@
       <workItem from="1601958609724" duration="4308000" />
       <workItem from="1602149119456" duration="3296000" />
       <workItem from="1603198838968" duration="791000" />
-      <workItem from="1604511600832" duration="1782000" />
+      <workItem from="1604511600832" duration="1949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64193000" />
+    <option name="totallyTimeSpent" value="64360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1400" height="812" extended-state="0" />
@@ -358,8 +358,8 @@
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/laravel-2020-10-08.log" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="838" column="21" lean-forward="true" selection-start-line="838" selection-start-column="21" selection-end-line="838" selection-end-column="21" />
+        <state relative-caret-position="400">
+          <caret line="844" column="10" selection-start-line="844" selection-start-column="10" selection-end-line="844" selection-end-column="10" />
         </state>
       </provider>
     </entry>
