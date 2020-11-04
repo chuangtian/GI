@@ -14,8 +14,9 @@ class JobController extends Controller
     //测试
     public function test(Request $request){
 
+        $a=$this->sendETH2('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg','0xF2f415e286f405D2187BA42D4f471E3E4ae90124');
 
-        $a=$this->sendERC2('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg','40293308962','0xdac17f958d2ee523a2206206994597c13d831ec7','0xF2f415e286f405D2187BA42D4f471E3E4ae90124',null);
+        //$a=$this->sendERC2('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg','40293308962','0xdac17f958d2ee523a2206206994597c13d831ec7','0xF2f415e286f405D2187BA42D4f471E3E4ae90124',null);
         dd($a);
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
@@ -822,7 +823,7 @@ class JobController extends Controller
         //$result = $client->eth_accounts();
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$gasPrice = $gethrpc->eth_gasPrice();
-        $gasPrice['result'] = '0x8bb2c97000';
+        $gasPrice['result'] = '0xd18c2e27ff';
         $gasPrice=bcdiv(hexdec($gasPrice["result"]),"1000000000000000000",18);
         //$result1 = $client->eth_getBalance("0xb3b910d79399eb74f7f04dc4568893450bf843e2","latest");
         $result2 = $gethrpc->eth_getBalance($data['from'],"latest");
@@ -838,17 +839,18 @@ class JobController extends Controller
         }else{
             $value=dechex(bcmul($amount,"1000000000000000000"));//减掉要消耗的费用并转十六进制
         }
+        dd($value);
         $gasPrice2 = $gethrpc->eth_gasPrice();
         $estimateGas = $gethrpc->eth_estimateGas($data);
         $data["value"]="0x".$value;
         //$data["gasPrice"]=$gasPrice2['result'];
-        $data["gasPrice"]='0x8bb2c97000';
+        $data["gasPrice"]='0xd18c2e27ff';
         $data["gas"]=$estimateGas['result'];
         //$noce=$this->noce($from);
         //$data["nonce"]="0xc";
         //$data["nonce"]=$noce;
         //dd($data,$gasPrice2,$gasPrice);
-        //dd($data);
+        dd($data);
         $gethrpc->personal_unlockAccount($data["from"],$password);//解锁
         //dd($amount);
         $result = $gethrpc->eth_sendTransaction($data);//发送
