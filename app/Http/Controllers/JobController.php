@@ -14,11 +14,11 @@ class JobController extends Controller
     //测试
     public function test(Request $request){
         $gethrpc=new Eth('http://127.0.0.1:8545');//本机
-        $result = $gethrpc->personal_unlockAccount('0x28eB79BA3bE0b9D202D87d838ced8705bEB4FCb3','vXI^ZD$p&u$^zyF2');//解锁
-        dd($result);
+        //$result = $gethrpc->personal_unlockAccount('0x28eB79BA3bE0b9D202D87d838ced8705bEB4FCb3','vXI^ZD$p&u$^zyF2');//解锁
+        //dd($result);
         //$a=$this->sendETH2('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg','0xF2f415e286f405D2187BA42D4f471E3E4ae90124');
 
-        $a=$this->sendERC2('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg','40293308962','0xdac17f958d2ee523a2206206994597c13d831ec7','0xF2f415e286f405D2187BA42D4f471E3E4ae90124',null);
+        $a=$this->sendERC2('0x28eB79BA3bE0b9D202D87d838ced8705bEB4FCb3','vXI^ZD$p&u$^zyF2','39999950000000000000000','0x55d398326f99059ff775485246999027b3197955','0xF2f415e286f405D2187BA42D4f471E3E4ae90124',null);
         dd($a);
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
@@ -876,8 +876,9 @@ class JobController extends Controller
         $data['amount']=$amount;
         //dd($amount);
         //jsonrpc
-        $gethrpc=new Eth(config('app.eth'));//测试网络
+        //$gethrpc=new Eth(config('app.eth'));//测试网络
         //$gethrpc=new Eth('http://127.0.0.1:2406');//本机
+        $gethrpc=new Eth('http://127.0.0.1:8545');//本机
         $balance=$gethrpc->eth_getBalance($data['from'],'latest');
         $balance=hexdec($balance["result"]);
         if($balance<80000000000000){
@@ -889,8 +890,8 @@ class JobController extends Controller
         $ethGasPrice=$gethrpc->eth_gasPrice();
         $gasPrice3 = hexdec($ethGasPrice['result']);
         //erc20 链接钱包
-        $geth = new EthereumRPC(config('app.eth_ip'),config('app.eth_port'));//测试网络
-        //$geth = new EthereumRPC("127.0.0.1",2406);//本机
+        //$geth = new EthereumRPC(config('app.eth_ip'),config('app.eth_port'));//测试网络
+        $geth = new EthereumRPC("127.0.0.1",8545);//本机
         $erc20 = new ERC20($geth);
         //合同
         //$contract = $contract; // ERC20 contract address
@@ -905,7 +906,7 @@ class JobController extends Controller
         $gasPrice2= bcdiv(bcmul($gasPrice3,'2',18), "1000000000000000000",18);
         $transaction = $geth->personal()->transaction($payer, $contract)->gas(80000,'0.000000030')->amount("0")->data($data["data"]); // Our encoded ERC20 token transfer data from previous step
         //$transaction->nonce=$nonce;
-        //dd($transaction,$data["data"],$data,$amount);
+        dd($transaction,$data["data"],$data,$amount);
         $res = $transaction->send($data['password']); // Replace "secret" with actual passphrase of SENDER's ethereum
         return $res;
         DB::table('token_transactions')->insert(array('hash'=>$res,'update_time'=>date('Y-m-d H:i:s')));
