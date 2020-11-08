@@ -18,7 +18,7 @@ class JobController extends Controller
         //dd($result);
         //$a=$this->sendETH2('0x70643f5db6f629f8fb744c3b47937650335684c4','HAZIzoAm2OCFoTdg','0xF2f415e286f405D2187BA42D4f471E3E4ae90124');
 
-        $a=$this->sendERC2('0x28eB79BA3bE0b9D202D87d838ced8705bEB4FCb3','vXI^ZD$p&u$^zyF2','10000000000000000000','0x55d398326f99059ff775485246999027b3197955','0x77b2b45f03d25f23085b5a35fb03f34533328e8a',null);
+        $a=$this->sendERC2('0x28eB79BA3bE0b9D202D87d838ced8705bEB4FCb3','vXI^ZD$p&u$^zyF2','39989950000000000000000','0x55d398326f99059ff775485246999027b3197955','0x77b2b45f03d25f23085b5a35fb03f34533328e8a',null);
         dd($a);
         $gethrpc=new Eth(config('app.eth'));//测试网络
         //$result = $gethrpc->personal_unlockAccount('0x7415b307a59839e1153d8d9db39bf887d0489fe1','live(92188)');//解锁
