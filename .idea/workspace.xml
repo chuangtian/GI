@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e7e01ea-ab24-41ab-a338-0285f61588ba" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" afterDir="false" />
-    </list>
+    <list default="true" id="2e7e01ea-ab24-41ab-a338-0285f61588ba" name="默认更改列表" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +15,7 @@
     <session id="-1739392440">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.2" value="1" />
@@ -69,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="205" selection-start-line="20" selection-start-column="163" selection-end-line="20" selection-end-column="205" />
+            <state relative-caret-position="212">
+              <caret line="883" column="34" selection-start-line="883" selection-start-column="20" selection-end-line="883" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -188,7 +186,7 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="32" />
+    <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="812" />
   </component>
@@ -277,12 +275,12 @@
       <workItem from="1602149119456" duration="3296000" />
       <workItem from="1603198838968" duration="791000" />
       <workItem from="1604511600832" duration="2183000" />
-      <workItem from="1604747211109" duration="1249000" />
+      <workItem from="1604747211109" duration="2309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65843000" />
+    <option name="totallyTimeSpent" value="66903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1400" height="812" extended-state="0" />
@@ -359,8 +357,8 @@
     <entry file="file:///private/var/folders/hp/8cs393nn15v_6xntby00gg400000gn/T/fz3temp-2/laravel-2020-10-08.log" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="205" selection-start-line="20" selection-start-column="163" selection-end-line="20" selection-end-column="205" />
+        <state relative-caret-position="212">
+          <caret line="883" column="34" selection-start-line="883" selection-start-column="20" selection-end-line="883" selection-end-column="34" />
         </state>
       </provider>
     </entry>
